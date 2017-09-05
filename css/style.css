@@ -1,0 +1,326 @@
+/*fonts*/
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro-Bold.eot');
+  src: url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Bold.woff2') format('woff2'), url('../fonts/GothamPro-Bold.woff') format('woff');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Fira Sans', sans-serif;
+}
+html{
+    font-size: 16px;
+}
+/*fonts mixins*/
+.normal {
+  font-family: 'Fira Sans';
+  font-weight: normal;
+}
+.bold {
+  font-family: 'Fira Sans';
+  font-weight: bold;
+}
+.medium {
+  font-family: 'Fira Sans';
+  font-weight: medium;
+}
+.large_text {
+  font-family: 'Gotham Pro';
+  font-weight: bold;
+}
+/*шапка*/
+header {
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+header .logotype {
+  vertical-align: top;
+}
+header .descript {
+  padding-top: 20px;
+  
+}
+header .header_decor_line{
+    width: 2px;
+    height: 60px;
+    background-color: #000000;
+    margin: 0 auto;
+    
+}
+header .descript h4 {
+  font-family: 'Fira Sans';
+  font-weight: normal;
+  font-size: 12px;
+  vertical-align: middle;
+}
+header .email {
+  padding-top: 15px;
+ 
+  color: #373737;
+  font-family: 'Fira Sans';
+  font-weight: normal;
+  font-size: 12px;
+}
+header .email a {
+  color: #373737;
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px dashed #373737;
+}
+header .email a:hover {
+  color: #2774af;
+  border-bottom: 1px dashed #2774af;
+}
+header .order_phone {
+  padding-top: 15px;
+  color: #373737;
+  font-family: 'Fira Sans';
+  font-weight: normal;
+  font-size: 12px;
+}
+header .order_phone a {
+  color: #373737;
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px dashed #373737;
+}
+header .order_phone a:hover {
+  color: #2774af;
+  border-bottom: 1px dashed #2774af;
+}
+header .phone_number {
+  padding-top: 15px;
+  font-family: 'Fira Sans';
+  font-weight: bold;
+  font-size: 22px;
+}
+header .phone_number a {
+  text-decoration: none;
+  color: #373737;
+}
+header .phone_number a span {
+  color: #fa9600;
+}
+nav {
+  margin: 0 auto;
+  background-color: #3d3d3d;
+}
+nav ul.list-inline {
+  margin-bottom: 0;
+}
+nav ul.list-inline a {
+  font-family: 'Fira Sans';
+  font-weight: bold;
+  font-size: 16px;
+  color: #FFFFFF;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 20px 10px;
+}
+nav ul.list-inline a:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+/*настройки*/
+a, a:hover,a:visited,a:active{
+    text-decoration: none;
+}
+/*главный экран*/
+section#main {
+  background: url(../img/main_bg.jpg) no-repeat center center;
+  background-size: cover;
+  border-bottom: 4px solid #fa9600;
+}
+
+section#main .main_header h3 {
+  margin-top: 65px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Fira Sans';
+  font-weight: normal;
+  font-size: 20px;
+}
+section#main .main_header h1 {
+  font-family: 'Gotham Pro';
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 45px;
+}
+section#main .main_list{
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'Fira Sans';
+  font-weight: medium;  
+  background-color:  rgba(0, 0, 0, 0.52);
+  padding-top: 25px;
+}
+/*section#main .main_list li:nth-child(even){
+    margin-left:40px; 
+}*/
+section#main .main_button button{
+   margin-top: 60px;
+    margin-bottom:  60px;
+   background: linear-gradient(180deg, #FA9600 0%, #FFD800 100%);
+   color:#10110d;
+   text-transform: uppercase;
+   font-family: 'Fira Sans';
+   font-weight: bold;
+   font-size: 16px;
+   border-radius: 4px;
+   padding: 10px;
+}
+
+/*экран с продукцией*/
+section#production{
+  background: url(../img/display2_bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+section#production h2{
+  font-family: 'Fira Sans';
+  font-weight: bold;
+  color:#555862;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 40px;
+
+}
+section#production .decor_line {
+    display: inline-block;
+    background-color: #fa9600;
+    width: 4px;
+    height: 65px;
+    border: 1px solid #fa9600;
+    transform: rotate(90deg);
+    -moz-transform: rotate(90deg); /* Для Firefox */
+   margin-left:30px;
+    
+}
+section#production h4{
+   font-family: 'Fira Sans';
+  font-weight: normal;
+  color:#000000;
+  font-size: 20px;
+  
+}
+section#production .production_text{
+  font-family: 'Fira Sans';
+  font-weight: normal;
+  color:#000000;
+  font-size: 14px;
+  line-height: 26px;
+  margin-top: 25px;
+  
+}
+section#production .main_button {
+   margin-top: 4rem;
+   margin-bottom:  4rem;
+   background: -webkit-linear-gradient(180deg, #FA9600 0%, #FFD800 100%);
+   background: -moz-linear-gradient(180deg, #FA9600 0%, #FFD800 100%);
+   background: -o-linear-gradient(180deg, #FA9600 0%, #FFD800 100%);
+   background: -ms-linear-gradient(180deg, #FA9600 0%, #FFD800 100%);
+   background: linear-gradient(180deg, #FA9600 0%, #FFD800 100%);
+   color:#10110d;
+   text-transform: uppercase;
+   font-family: 'Fira Sans';
+   font-weight: bold;
+   font-size: 16px;
+   border-radius: 4px;
+   padding: 10px;
+
+
+}
+
+section#production .price_link{
+    margin-top: 4rem;
+    margin-bottom:  4rem;
+}
+section#production .price a {
+  color: #2774af;
+  font-size: 16px;
+  text-decoration: none;
+  border-bottom: 1px dashed #2774af;
+  
+}
+
+/*экран с продукцией мини*/
+section#production_mini{
+     border-bottom: 4px solid #fa9600;
+}
+section#production_mini .img_example_mini{
+    background: url(../img/display3_bg.jpg) no-repeat center center;
+  background-size: cover;
+  margin-top: 60px;
+}
+
+section#production_mini h2{
+  font-family: 'Fira Sans';
+  font-weight: bold;
+  color:#555862;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 20px;
+
+}
+section#production_mini .decor_line {
+    display: inline-block;
+    background-color: #fa9600;
+    width: 4px;
+    height: 65px;
+    border: 1px solid #fa9600;
+    transform: rotate(90deg);
+    -moz-transform: rotate(90deg); 
+    -ms-transform: rotate(90deg); 
+    -webkit-transform: rotate(90deg); 
+    -o-transform: rotate(90deg);
+    margin-left:30px;
+    
+}
+section#production_mini h4{
+   font-family: 'Fira Sans';
+  font-weight: normal;
+  color:#000000;
+  font-size: 20px;
+  
+}
+section#production_mini .production_text{
+  font-family: 'Fira Sans';
+  font-weight: normal;
+  color:#000000;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 15px;
+  
+}
+section#production_mini .main_button {
+   margin-top: 3rem;
+   margin-bottom:  0.8rem;
+   background: -webkit-linear-gradient(180deg, #FA9600 0%, #FFD800 100%);
+   background: -moz-linear-gradient(180deg, #FA9600 0%, #FFD800 100%);
+   background: -o-linear-gradient(180deg, #FA9600 0%, #FFD800 100%);
+   background: -ms-linear-gradient(180deg, #FA9600 0%, #FFD800 100%);
+   background: linear-gradient(180deg, #FA9600 0%, #FFD800 100%);
+   color:#10110d;
+   text-transform: uppercase;
+   font-family: 'Fira Sans';
+   font-weight: bold;
+   font-size: 16px;
+   border-radius: 4px;
+   padding: 10px;
+
+
+}
+section#production_mini .price_link{
+    margin-top: 4rem;
+    margin-bottom:  4rem;
+}
+section#production_mini .price a {
+  color: #2774af;
+  font-size: 16px;
+  text-decoration: none;
+  border-bottom: 1px dashed #2774af;
+  margin-left: 70px;
+}
+
+
